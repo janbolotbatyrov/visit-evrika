@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.main {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(8, 7, 103, 1) 0%,
+        rgba(9, 8, 113, 1) 7%,
+        rgba(9, 9, 121, 1) 35%,
+        rgba(0, 212, 255, 1) 100%
+    );
+    padding: 40px 0;
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.visit {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+.visit__header {
+    border-radius: 15px 15px 0 0;
+    background-color: red;
+    background-image: linear-gradient(to right, red, #f06d06);
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.visit__logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.visit__title {
+    padding: 40px 20px;
+}
+
+.visit__title span {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.visit__info {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.visit__info .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 30px;
+    margin-right: 10px;
+    animation: dot 1s infinite;
+}
+
+@keyframes dot {
+    0% {
+        background-color: rgb(0, 0, 0);
+    }
+    50% {
+        background-color: rgb(0, 255, 13);
+    }
+    100% {
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+.visit__social {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.visit__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+.visit__link span {
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.767);
+}
+
+.visit__link i {
+    font-size: 32px;
+}
+
+.visit__course {
+    background-color: #fff;
+    color: #000;
+}
+
+.phone {
+    color: #fff;
+    background: #0084ff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s ease-in-out;
+    box-shadow: 0px 3px 6px rgb(175, 175, 175);
+}
+
+.whatsapp {
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 3px 6px rgb(175, 175, 175);
+    transition: all 0.1s ease-in-out;
+    background: #00ff2a;
+}
+
+.whatsapp i {
+    font-size: 34px;
+}
+
+.youtube {
+    color: #fff;
+    background: #ff0000;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 3px 6px rgb(175, 175, 175);
+    transition: all 0.1s ease-in-out;
+}
+
+.youtube:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp:hover {
+    transform: scale(1.1);
+}
+
+.phone:hover {
+    transform: scale(1.1);
+}
+
+.visit__course {
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 0 0 15px 15px;
+}
+
+.visit__course-title {
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    margin-bottom: 20px;
+}
+
+.visit__balloon-reading {
+    margin: 20px 40px 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    -webkit-box-shadow: 0px 5px 10px -1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px -1px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px -1px rgba(34, 60, 80, 0.2);
+}
+
+.visit__balloon-reading:hover {
+    color: #fff;
+    background-color: rgb(253, 81, 29);
+}
+
+@media screen and (max-width: 376px) {
+    .container {
+        width: 350px;
+    }
+    .visit__logo {
+        margin-right: 10px;
+    }
+    .visit__balloon-reading {
+        margin: 20px 20px;
+    }
+    .visit__info {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        width: 300px;
+    }
+}
