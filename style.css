@@ -5,6 +5,10 @@
 html {
     scroll-behavior: smooth;
 }
+a {
+    text-decoration: none;
+    color: #fff;
+}
 .main {
     background: rgb(2, 0, 36);
     background: linear-gradient(
