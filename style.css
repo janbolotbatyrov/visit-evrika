@@ -10,7 +10,7 @@ a {
     color: #fff;
 }
 .main {
-    background: rgb(2, 0, 36);
+    /* background: rgb(2, 0, 36);
     background: linear-gradient(
         90deg,
         rgba(2, 0, 36, 1) 0%,
@@ -18,7 +18,12 @@ a {
         rgba(9, 8, 113, 1) 7%,
         rgba(9, 9, 121, 1) 35%,
         rgba(0, 212, 255, 1) 100%
-    );
+    ); */
+    background-image: url("https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 40px 0;
 }
 
