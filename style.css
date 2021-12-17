@@ -237,19 +237,25 @@ a {
     .visit__info {
         font-size: 14px;
     }
+    .infoModal {
+        max-width: 310px;
+    }
 }
 
 @media screen and (max-width: 320px) {
     .container {
         width: 300px;
     }
+    .infoModal {
+        max-width: 260px;
+    }
 }
 
 .infoModal {
-    width: 350px;
+    width: 360px;
     height: 85vh;
     position: fixed;
-    top: 60px;
+    top: 40px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #fff;
