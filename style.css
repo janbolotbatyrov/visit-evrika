@@ -186,7 +186,6 @@ a {
     width: 100%;
     padding: 20px 0;
     border-radius: 0 0 15px 15px;
-    position: relative;
 }
 
 .visit__course-title {
@@ -282,14 +281,31 @@ a {
     height: 0;
 }
 
+.infoModal b {
+    color: rgba(253, 29, 29, 1);
+}
+
 .infoModal i {
     position: absolute;
-    top: 15px;
-    right: 20px;
+    top: 0px;
+    right: 0px;
     font-size: 22px;
-    color: silver;
     margin-bottom: 10px;
     cursor: pointer;
+    background-color: rgba(253, 29, 29, 1);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 0 50px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    color: #fff;
+}
+
+.infoModal p {
+    margin-bottom: 20px;
 }
 
 .boolReading {
@@ -308,7 +324,7 @@ a {
     display: none;
 }
 
-.engilsh {
+.english {
     display: none;
 }
 
