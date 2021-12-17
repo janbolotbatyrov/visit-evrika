@@ -224,6 +224,12 @@ a {
     background-color: rgb(253, 81, 29);
 }
 
+@media screen and (max-width: 426px) {
+    .infoModal {
+        top: 20px !important;
+    }
+}
+
 @media screen and (max-width: 376px) {
     .container {
         width: 350px;
