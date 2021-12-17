@@ -186,6 +186,7 @@ a {
     width: 100%;
     padding: 20px 0;
     border-radius: 0 0 15px 15px;
+    position: relative;
 }
 
 .visit__course-title {
@@ -204,7 +205,7 @@ a {
     margin-bottom: 20px;
 }
 
-.visit__balloon-reading {
+.visit__course-item {
     margin: 20px 40px 0;
     height: 40px;
     display: flex;
@@ -218,7 +219,7 @@ a {
     box-shadow: 0px 5px 10px -1px rgba(34, 60, 80, 0.2);
 }
 
-.visit__balloon-reading:hover {
+.visit__course-item:hover {
     color: #fff;
     background-color: rgb(253, 81, 29);
 }
@@ -230,7 +231,7 @@ a {
     .visit__logo {
         margin-right: 10px;
     }
-    .visit__balloon-reading {
+    .visit__course-item {
         margin: 20px 20px;
     }
     .visit__info {
@@ -242,4 +243,67 @@ a {
     .container {
         width: 300px;
     }
+}
+
+.infoModal {
+    width: 350px;
+    height: 85vh;
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    color: #000;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    line-height: 1.5;
+    box-shadow: 0px 10px 50px #000;
+    overflow: hidden;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.infoModal::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.infoModal i {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 22px;
+    color: silver;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.boolReading {
+    display: none;
+}
+
+.fastReading {
+    display: none;
+}
+
+.boolReadingScratch {
+    display: none;
+}
+
+.manuscript {
+    display: none;
+}
+
+.engilsh {
+    display: none;
+}
+
+.freeSpeech {
+    display: none;
+}
+
+.matematika {
+    display: none;
 }
